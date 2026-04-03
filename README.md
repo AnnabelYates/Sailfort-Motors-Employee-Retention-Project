@@ -7,7 +7,7 @@ Using Python, I performed an exploratory data analysis on employee data to ident
 1) Company-wide interventions, rather than department specific
 2) Policy of 5 current projects maximum
 3) Ensure sufficient benefits, including confidential mental health care
-4) Research ways to handle employee burnout   
+4) Research ways to address employee burnout   
 
 ## Business Problem: 
 
