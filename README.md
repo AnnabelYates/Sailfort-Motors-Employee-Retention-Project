@@ -52,9 +52,31 @@ Most employees who left the company worked extremely high hours every month. Eve
 
 <img width="945" height="225" alt="image" src="https://github.com/user-attachments/assets/c3896dfe-f3b2-460a-aa1e-7374acc8ebd4" /> 
 
-Visualizing which employess left by how many projects they currently had revealed startling differences of employee retention rates. All employees who had 7 projects left the company, and about half of those with 6 projects left the company. Interestingly, having too few projects also had a negative impact on employee retention. Over half of all employees with only 2 projects left the company. Evidence indicates having 3 to 5 projects is an ideal workload for most employees.   
+Visualizing which employees left by how many projects they currently had revealed startling differences of employee retention rates. All employees who had 7 projects left the company, and about half of those with 6 projects left the company. Interestingly, having too few projects also had a negative impact on employee retention. Over half of all employees with only 2 projects left the company. Evidence indicates having 3 to 5 projects is an ideal workload for most employees.   
 
 <img width="395" height="275" alt="image" src="https://github.com/user-attachments/assets/ea7831d8-a288-443e-a812-dc9223c32180" /> 
 
+A Chi-Square test determined that employee department had little or no impact on the rate employees left the company. No employee in one department is statistically more likely to leave than any other department. Due to this and a heightened risk of overfitting, this variable was not used in model development. To ensure the model is able to be used in the future without subjective employee input, satisfaction score was dropped also. 
+
+### Summary of model results
+The scoring metric I was most interested in is recall, as this would find as many potential employees leaving the company as possible. I wanted to reduce false negatives (identifying people as staying when they will actually leave). This is generally used in employee turnover models because it is generally more expensive to lose a trained employee than initiate some form of intervention. The model that performed best was the random forest machine learning model. This model performed successfully across all metrics. The model performed identically on the test data as the validation data for recall, which was 0.927. This means that the model correctly identified 92.7% of all people who leave the company. The F1 and precision scores increased for the model with the test data, but are within an expected variation. The accuracy score was 0.968, the precision score was 0.889, and the F1 score was 0.907. Additional testing using novel test data revealed
+the model is excellent at correctly identifying both employees who will leave the company and those who will be retained by the company. Since the model performed as well on the unseen test data as the validation data, which indicates the model is not overfitted to the training data, I am confident the company will be able to use this model on new data with successful results. 
+
+The confusion matrix showed the success of the model's performance. Only 29 employees who left were missed by the model after predicting about 10,000 employees.  In the future, the model is expected to correctly predict 96.9% of employees who will be retained and 92.7% of employees who will leave. 
+ 
+<img width="346" height="262" alt="image" src="https://github.com/user-attachments/assets/611a00ed-79da-4934-ac92-000f79c658c1" />
+
+The most important features for the model were projects, total hours worked for the company over an employee's entire employment there, and latest performance scores. Hours per month also contributed significantly. Tenure, being under appreciated, and salary level had a limited influence on the model. Being a hard worker, high performer, having a work accident, being overworked, having a recent promotion and being full time had no impact on the model.
+
+<img width="378" height="350" alt="image" src="https://github.com/user-attachments/assets/6d735486-42be-447d-8a4f-91b716052b03" />
+
+### Recommendations for Sailfort Motors
+
+- Evidence suggests that there is not a major issue among specific departments affecting employee retention rate. Interventions can be implemented more broadly among the employee population rather than tailoring the approach to select departments.
+- Implement a policy to cap the amount of projects employees can work on at one time to 5. Between 3 and 5 projects at a time would be ideal for most employees.
+- Data indicates employee burnout is pervasive throughout the company due to a culture of long hours and heavy workloads. Ensure benefit packages are sufficient and investigate whether employees have confidential access and awareness of mental health care, such as online therapy.
+- Employee burnout is a common issue in issue in corporate workplaces. Research ways other companies have successfully addressed this issue. 
+
 ## Next Steps:
-- Survey employees who have been with the company for greater than 7 years to identify factors that contributed to their loyalty. 
+- Survey employees who have been with the company for greater than 7 years to identify factors that contributed to their loyalty.
+- Investigate factors behind extremely long monthly hours of some employees. This could reveal ways to boost productivity for employees while reducing long monthly hours which is related to decreased employee retention rates. 
