@@ -16,7 +16,7 @@ predicting whether an employee will stay with the company or leave, so they can 
 use this information to implement interventions to improve employee retention. This will lead to cost and time savings as the company invests
 heavily in training new employees.
 
-### What employee sub-populations are most likely to leave the company, and can an accurate model be created to predict whether an employee will be retained by or leave the company?  
+#### What employee sub-populations are most likely to leave the company, and can an accurate model be created to predict whether an employee will be retained by or leave the company?  
 
 ## Methodology: 
 
@@ -35,6 +35,26 @@ Python: data modeling, machine learning, statistics, Chi-Square test, data visua
 Communication: executive summary
 
 ## Results and Business Recommendations: 
+
+Performing an exploratory data analysis revealed employee sub-populations at risk for leaving Sailfort Motors.
+
+#### Employees most at risk of leaving the company: 
+
+➢ Feel unsatisfied, overworked, and under-appreciated
+due to heavy work loads and no recent promotions.
+➢ Feel satisfied and perform well at their work, but work
+very long hours.
+➢ Have 6 or more projects.
+➢ Have only 2 projects.
+➢ Feel unsatisfied and perform poorly at their jobs. 
+
+Most employees who left the company worked extremely high hours every month. Even though they worked the longest hours out of all employees, these employees were less likely than their peers who worked shorter hours to receive promotions within the last 5 years. 
+
+<img width="945" height="225" alt="image" src="https://github.com/user-attachments/assets/c3896dfe-f3b2-460a-aa1e-7374acc8ebd4" /> 
+
+Visualizing which employess left by how many projects they currently had revealed startling differences of employee retention rates. All employees who had 7 projects left the company, and about half of those with 6 projects left the company. Interestingly, having too few projects also had a negative impact on employee retention. Over half of all employees with only 2 projects left the company. Evidence indicates having 3 to 5 projects is an ideal workload for most employees.   
+
+<img width="395" height="275" alt="image" src="https://github.com/user-attachments/assets/ea7831d8-a288-443e-a812-dc9223c32180" /> 
 
 ## Next Steps:
 - Survey employees who have been with the company for greater than 7 years to identify factors that contributed to their loyalty. 
