@@ -58,7 +58,7 @@ Visualizing which employees left by how many projects they currently had reveale
 
 A Chi-Square test determined that employee department had little or no impact on the rate employees left the company. No employee in one department is statistically more likely to leave than any other department. Due to this and a heightened risk of overfitting, this variable was not used in model development. To ensure the model is able to be used in the future without subjective employee input, satisfaction score was dropped also. 
 
-### Summary of model results
+### Summary of model results:
 The scoring metric I was most interested in is recall, as this would find as many potential employees leaving the company as possible. I wanted to reduce false negatives (identifying people as staying when they will actually leave). This is generally used in employee turnover models because it is generally more expensive to lose a trained employee than initiate some form of intervention. The model that performed best was the random forest machine learning model. This model performed successfully across all metrics. The model performed identically on the test data as the validation data for recall, which was 0.927. This means that the model correctly identified 92.7% of all people who leave the company. The F1 and precision scores increased for the model with the test data, but are within an expected variation. The accuracy score was 0.968, the precision score was 0.889, and the F1 score was 0.907. Additional testing using novel test data revealed
 the model is excellent at correctly identifying both employees who will leave the company and those who will be retained by the company. Since the model performed as well on the unseen test data as the validation data, which indicates the model is not overfitted to the training data, I am confident the company will be able to use this model on new data with successful results. 
 
@@ -70,7 +70,7 @@ The most important features for the model were projects, total hours worked for 
 
 <img width="378" height="350" alt="image" src="https://github.com/user-attachments/assets/6d735486-42be-447d-8a4f-91b716052b03" />
 
-### Recommendations for Sailfort Motors
+### Recommendations for Sailfort Motors:
 
 - Evidence suggests that there is not a major issue among specific departments affecting employee retention rate. Interventions can be implemented more broadly among the employee population rather than tailoring the approach to select departments.
 - Implement a policy to cap the amount of projects employees can work on at one time to 5. Between 3 and 5 projects at a time would be ideal for most employees.
