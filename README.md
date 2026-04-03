@@ -40,13 +40,13 @@ Performing an exploratory data analysis revealed employee sub-populations at ris
 
 #### Employees most at risk of leaving the company: 
 
-➢ Feel unsatisfied, overworked, and under-appreciated
+- Feel unsatisfied, overworked, and under-appreciated
 due to heavy work loads and no recent promotions.
-➢ Feel satisfied and perform well at their work, but work
+- Feel satisfied and perform well at their work, but work
 very long hours.
-➢ Have 6 or more projects.
-➢ Have only 2 projects.
-➢ Feel unsatisfied and perform poorly at their jobs. 
+- Have 6 or more projects.
+- Have only 2 projects.
+- Feel unsatisfied and perform poorly at their jobs. 
 
 Most employees who left the company worked extremely high hours every month. Even though they worked the longest hours out of all employees, these employees were less likely than their peers who worked shorter hours to receive promotions within the last 5 years. 
 
