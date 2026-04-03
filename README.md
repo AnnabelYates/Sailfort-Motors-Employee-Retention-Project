@@ -31,8 +31,10 @@ heavily in training new employees.
 
 ## Skills: 
 
-Python: data modeling, machine learning, statistics, Chi-Square test, data visualization, exploratory data analysis (EDA), data cleaning, Logistic Regression Model, Random Forest Model, XGBoost Model, Seaborn, Matplotlib, Sklearn, Numpy, Pandas
-Communication: executive summary
+#### Python: 
+data modeling, machine learning, statistics, Chi-Square test, data visualization, exploratory data analysis (EDA), data cleaning, Logistic Regression Model, Random Forest Model, XGBoost Model, Seaborn, Matplotlib, Sklearn, Numpy, Pandas
+#### Communication: 
+executive summaries
 
 ## Results and Business Recommendations: 
 
