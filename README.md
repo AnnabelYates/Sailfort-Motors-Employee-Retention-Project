@@ -5,7 +5,7 @@
 Using Python, I performed an exploratory data analysis on employee data to identify sub-populations of employees who are more likely to leave the company. I ran a Chi-Square test which revealed that employee department was not a contributing factor behind employees leaving the company. After establishing basic profiles of employees less likely to be retained by the company, I created a logistic regression model, a random forest machine learning model, and an XGBoost machine learning model. Ultimately, I selected the random forest machine learning model to present to the company, which they would be able to use to predict whether employees would be retained by or leave the company. I also suggested the following recommendations to increase employee retention:
 
 1) Company-wide interventions, rather than department specific
-2) Policy of maximum of 5 projects 
+2) Policy of 5 current projects maximum
 3) Ensure sufficient benefits, including confidential mental health care
 4) Research ways to handle employee burnout   
 
