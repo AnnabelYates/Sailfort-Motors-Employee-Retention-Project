@@ -1835,21 +1835,21 @@ xgb_cv = GridSearchCV(xgb, cv_params, scoring=scoring, cv=5, refit='recall')
 # In[142]:
 
 
-# xgb_cv.fit(X_train, y_train)
+xgb_cv.fit(X_train, y_train)
 
 
 # In[143]:
 
 
 # Examine best score
-# xgb_cv.best_score_
+ xgb_cv.best_score_
 
 
 # In[144]:
 
 
 # Examine best parameters
-# xgb_cv.best_params_
+ xgb_cv.best_params_
 
 
 # In[145]:
@@ -1857,19 +1857,19 @@ xgb_cv = GridSearchCV(xgb, cv_params, scoring=scoring, cv=5, refit='recall')
 
 # Use the XGB model to predict on the validation data
 
-# xgb_val_preds = xgb_cv.best_estimator_.predict(X_val)
+xgb_val_preds = xgb_cv.best_estimator_.predict(X_val)
 
 
 # In[146]:
 
 
 # Generate array of values for confusion matrix
-#cm = confusion_matrix(y_val, xgb_val_preds, labels=xgb_cv.classes_)
+cm = confusion_matrix(y_val, xgb_val_preds, labels=xgb_cv.classes_)
 
 # Plot confusion matrix
-#disp = ConfusionMatrixDisplay(confusion_matrix=cm,
-#                             display_labels=['stayed', 'left'])
-#disp.plot();
+disp = ConfusionMatrixDisplay(confusion_matrix=cm,
+                             display_labels=['stayed', 'left'])
+disp.plot();
 
 
 # In[147]:
@@ -1877,10 +1877,10 @@ xgb_cv = GridSearchCV(xgb, cv_params, scoring=scoring, cv=5, refit='recall')
 
 # Calculate the scores for the XGBoost model on the validation data
 
-#accuracy = accuracy_score(y_val, xgb_val_preds)
-#precision = precision_score(y_val, xgb_val_preds)
-#recall = recall_score(y_val, xgb_val_preds)
-#f1 = f1_score(y_val, xgb_val_preds)
+accuracy = accuracy_score(y_val, xgb_val_preds)
+precision = precision_score(y_val, xgb_val_preds)
+recall = recall_score(y_val, xgb_val_preds)
+f1 = f1_score(y_val, xgb_val_preds)
 
 
 # In[148]:
@@ -1888,10 +1888,10 @@ xgb_cv = GridSearchCV(xgb, cv_params, scoring=scoring, cv=5, refit='recall')
 
 # Add the scores to the results list
 
-#xgb_val_list = ['XGBoost Val', accuracy, precision, recall, f1]
+xgb_val_list = ['XGBoost Val', accuracy, precision, recall, f1]
 
-#results.loc[len(results)] = xgb_val_list
-#print(results)
+results.loc[len(results)] = xgb_val_list
+print(results)
 
 
 # # pacE: Execute Stage
